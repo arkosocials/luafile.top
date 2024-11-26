@@ -1,12 +1,12 @@
 [
     {
         "download": "https://luafile.top/sigma/auth.txt",
-        "image": "https://raw.githubusercontent.com/arkosocials/luafile.top/refs/heads/main/sigma/image.png",
+        "image": "https://luafile.top/sigma/image.png",
         "title": "Fake key system",
         "smallTitle": "universal"
     },
     {
-        "download": "https://raw.githubusercontent.com/arkosocials/luafile.top/refs/heads/main/sigma/restart.txt",
+        "download": "https://luafile.top/sigma/restart.txt",
         "image": "https://luafile.top/sigma/imagee.png",
         "title": "Restart GUI",
         "smallTitle": "Pet Simulator 99"
