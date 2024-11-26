@@ -6,6 +6,12 @@
         "smallTitle": "universal"
     },
     {
+        "download": "https://luafile.top/sigma/loading.txt",
+        "image": "https://luafile.top/sigma/loading.png",
+        "title": "Loading GUI",
+        "smallTitle": "universal"
+    },
+    {
         "download": "https://luafile.top/sigma/restart.txt",
         "image": "https://luafile.top/sigma/imagee.png",
         "title": "Restart GUI",
