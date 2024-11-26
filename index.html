@@ -135,30 +135,34 @@
 </footer>
 
 <script>
-    async function loadCards() {
-        const response = await fetch('data.json'); // Fetch the JSON file
-        const data = await response.json(); // Parse the JSON data
-        const container = document.getElementById('cardContainer');
-        container.innerHTML = ''; // Clear any existing content
+async function loadCards() {
+    const response = await fetch('data.json'); // Fetch the JSON file
+    const data = await response.json(); // Parse the JSON data
+    
+    console.log(data); // Debugging: See the fetched data in the console
 
-        // Generate cards dynamically
-        data.forEach(item => {
-            const card = document.createElement('div');
-            card.className = 'card';
-            card.innerHTML = `
-                <img src="${item.image}" alt="${item.title}">
-                <div class="card-content">
-                    <h3>${item.title}</h3>
-                    <p>${item.smallTitle}</p>
-                    <a href="${item.download}" class="download-btn" download>Download</a>
-                </div>
-            `;
-            container.appendChild(card);
-        });
-    }
+    const container = document.getElementById('cardContainer');
+    container.innerHTML = ''; // Clear any existing content
 
-    // Load cards on page load
-    document.addEventListener('DOMContentLoaded', loadCards);
+    // Generate cards dynamically
+    data.forEach(item => {
+        const card = document.createElement('div');
+        card.className = 'card';
+        card.innerHTML = `
+            <img src="${item.image}" alt="${item.title}">
+            <div class="card-content">
+                <h3>${item.title}</h3>
+                <p>${item.smallTitle}</p>
+                <a href="${item.download}" class="download-btn" download>Download</a>
+            </div>
+        `;
+        container.appendChild(card);
+    });
+}
+
+// Load cards on page load
+document.addEventListener('DOMContentLoaded', loadCards);
+
 </script>
 
 
