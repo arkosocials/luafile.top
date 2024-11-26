@@ -1,26 +1,8 @@
 [
     {
         "download": "https://example.com/script1.lua",
-        "image": "Picsart_24-11-19_14-36-10-454.jpg",
+        "image": "https://Picsart_24-11-19_14-36-10-454.jpg",
         "title": "thumbnail",
         "smallTitle": "Best Lua script ever!"
-    },
-    {
-        "download": "https://example.com/script1.lua",
-        "image": "https://cdn.discordapp.com/attachments/1308743222285303921/1310918137113215057/Picsart_24-11-16_08-40-10-418.jpg?ex=6746f727&is=6745a5a7&hm=d01513a42429dd8918439fbd9e6dacd1a796274bb6ef621e3124fdad4e5a1093&",
-        "title": "thumbnail",
-        "smallTitle": "Best Lua script ever!"
-    },
-    {
-        "download": "https://example.com/script1.lua",
-        "image": "https://cdn.discordapp.com/attachments/1308743222285303921/1310918137113215057/Picsart_24-11-16_08-40-10-418.jpg?ex=6746f727&is=6745a5a7&hm=d01513a42429dd8918439fbd9e6dacd1a796274bb6ef621e3124fdad4e5a1093&",
-        "title": "thumbnail2",
-        "smallTitle": "Best Lua script ever!"
-    },
-    {
-        "download": "https://example.com/script1.lua",
-        "image": "https://cdn.discordapp.com/attachments/1308743222285303921/1310918137113215057/Picsart_24-11-16_08-40-10-418.jpg?ex=6746f727&is=6745a5a7&hm=d01513a42429dd8918439fbd9e6dacd1a796274bb6ef621e3124fdad4e5a1093&",
-        "title": "thumbnail",
-        "smallTitle": "opensourced"
     }
 ]
