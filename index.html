@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lua File Archive</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: #e1b12c;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            color: #aaaaaa;
+            margin-top: 10px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            max-width: 1200px;
+        }
+
+        .card {
+            background: #1f1f1f;
+            border: 1px solid #333333;
+            border-radius: 15px;
+            width: 300px;
+            text-align: center;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-content h3 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            color: #e1b12c;
+        }
+
+        .card-content p {
+            font-size: 1rem;
+            color: #bbbbbb;
+            margin-bottom: 20px;
+        }
+
+        .download-btn {
+            display: inline-block;
+            background: linear-gradient(90deg, #6a0dad, #9b59b6);
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-size: 1rem;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+
+        .download-btn:hover {
+            background: linear-gradient(90deg, #9b59b6, #6a0dad);
+            transform: translateY(-3px);
+        }
+
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            color: #666666;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #e1b12c;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Script Archive</h1>
+    <p>sigma!</p>
+</header>
+
+<div class="container" id="cardContainer">
+    <!-- Cards will be loaded dynamically from JSON -->
+</div>
+
+<footer>
+    <p>&copy; 2024 Script Archive | Stored with 💜 by <a href="#">arko2230</a></p>
+</footer>
+
+<script>
+    async function loadCards() {
+        const response = await fetch('data.json'); // Fetch the JSON file
+        const data = await response.json(); // Parse the JSON data
+        const container = document.getElementById('cardContainer');
+        container.innerHTML = ''; // Clear any existing content
+
+        // Generate cards dynamically
+        data.forEach(item => {
+            const card = document.createElement('div');
+            card.className = 'card';
+            card.innerHTML = `
+                <img src="${item.image}" alt="${item.title}">
+                <div class="card-content">
+                    <h3>${item.title}</h3>
+                    <p>${item.smallTitle}</p>
+                    <a href="${item.download}" class="download-btn" download>Download</a>
+                </div>
+            `;
+            container.appendChild(card);
+        });
+    }
+
+    // Load cards on page load
+    document.addEventListener('DOMContentLoaded', loadCards);
+</script>
+
+</body>
+</html>
