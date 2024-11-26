@@ -1,7 +1,7 @@
 [
     {
         "download": "https://example.com/script1.lua",
-        "image": "https://example.com/image1.png",
+        "image": "https://example.com/imag1.png",
         "title": "Amazing Script",
         "smallTitle": "Best Lua script ever!"
     },
