@@ -1,14 +1,14 @@
 [
     {
-        "download": "https://example.com/script1.lua",
-        "image": "https://wavescripts.xyz/Picsart_24-11-19_14-36-10-454.jpg",
-        "title": "thumbnail",
-        "smallTitle": "Best Lua script ever!"
+        "download": "https://raw.githubusercontent.com/arkosocials/luafile.top/refs/heads/main/sigma/auth.txt",
+        "image": "https://raw.githubusercontent.com/arkosocials/luafile.top/refs/heads/main/sigma/image.png",
+        "title": "Fake key system",
+        "smallTitle": "universal"
     },
     {
-        "download": "https://example.com/script2.lua",
-        "image": "https://wavescripts.xyz/Picsart_24-11-19_14-36-10-454.jpg",
-        "title": "another thumbnail",
-        "smallTitle": "Another great Lua script!"
+        "download": "https://raw.githubusercontent.com/arkosocials/luafile.top/refs/heads/main/sigma/restart.txt",
+        "image": "https://raw.githubusercontent.com/arkosocials/luafile.top/refs/heads/main/sigma/imagee.png",
+        "title": "Restart GUI",
+        "smallTitle": "Pet Simulator 99"
     }
 ]
