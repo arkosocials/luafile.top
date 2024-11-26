@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archive</title>
     <style>
+        /* General Reset */
         * {
             margin: 0;
             padding: 0;
@@ -115,7 +117,7 @@
 
         .download-btn {
             display: inline-block;
-            background: linear-gradient(90deg, #6a0dad, #9b59b6);
+            background: linear-gradient(90deg, #e1b12c, #d4a31e);
             color: #fff;
             text-decoration: none;
             padding: 10px 20px;
@@ -125,7 +127,7 @@
         }
 
         .download-btn:hover {
-            background: linear-gradient(90deg, #6a0dad, #9b59b6);
+            background: linear-gradient(90deg, #d4a31e, #e1b12c);
             transform: translateY(-3px);
         }
 
@@ -152,7 +154,7 @@
 
 <header>
     <h1>Script Archive</h1>
-    <p>Trusted & Secured</p>
+    <p>Trusted & Secure</p>
 </header>
 
 <div id="searchContainer">
@@ -168,7 +170,7 @@
 </div>
 
 <footer>
-    <p>&copy; 2024 Script Archive | Stored with 🧡 by <a href="https://discord.com/users/1169391686452007025/">arko2230</a></p>
+    <p>&copy; 2024 Script Archive | Stored with &#x1F9E1; by <a href="#">arko2230</a></p>
 </footer>
 
 <script>
@@ -221,9 +223,9 @@ function resizeCanvas() {
 function Particle(x, y) {
     this.x = x;
     this.y = y;
-    this.size = Math.random() * 3 + 1;
-    this.speedX = Math.random() * 2 - 1;
-    this.speedY = Math.random() * 2 - 1;
+    this.size = Math.random() * 2 + 1;
+    this.speedX = Math.random() * 0.5 - 0.5;
+    this.speedY = Math.random() * 0.5 - 0.5;
     this.opacity = Math.random();
 
     this.update = function () {
